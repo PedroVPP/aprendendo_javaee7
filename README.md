@@ -57,9 +57,23 @@ The server and containers are as follows:
 
  - Web container: Manages the execution of web pages, servlets, and some EJB components for Java EE applications. Web components and their container run on the Java EE server.
 
- - Application client container: Manages the execution of application client components. Application clients and their container run on the client.
+ - Application client container: Manages the execution of application client components. Application clients and their container run on the client. 
 
  - Applet container: Manages the execution of applets. Consists of a web browser and a Java Plug-in running on the client together.
+
+## Java EE Application Assembly and Deployment
+
+A Java EE application is packaged into one or more standard units for deployment to any Java EE platform-compliant system. Each unit contains
+
+ - A functional component or components, such as an enterprise bean, web page, servlet, or applet
+
+ - An optional deployment descriptor that describes its content
+
+Once a Java EE unit has been produced, it is ready to be deployed. Deployment typically involves using a platform's deployment tool to specify location-specific information, such as a list of local users who can access it and the name of the local database. Once deployed on a local platform, the application is ready to run.
+
+[Brief summary of the technologies required by the Java EE platform and the APIs used in Java EE applications](https://docs.oracle.com/javaee/7/tutorial/overview007.htm)
+
+[Java EE 7 APIs in the Java Platform, Standard Edition 7](https://docs.oracle.com/javaee/7/tutorial/overview008.htm)
 
 
 
